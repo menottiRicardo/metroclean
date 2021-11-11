@@ -59,7 +59,7 @@ function Hero() {
         </div>
       </div>
       <div className="justify-center flex mt-4 animate-bounce">
-        <ArrowDownIcon className="h-5 w-5 flex justify-center text-black" />
+        <ArrowDownIcon className="h-5 w-5 justify-center text-black xl:hidden hidden sm:inline-flex" />
       </div>
     </div>
   );
