@@ -12,7 +12,7 @@ function ServiciosCard({ title, color,url,style }: SerServiciosCardProps) {
         <p className={`z-10 absolute text-white text-2xl flex mt-20 ${style} sm:mt-44 sm:pt-20 cursor-none select-none`}>
           {title}
         </p>
-        <div className="flex justify-center bg-red-100">
+        <div className="flex justify-center">
           <div className={`relative bg-gray-${color} w-96 h-40 sm:h-screen`}>
             <Image
               src={url}

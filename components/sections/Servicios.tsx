@@ -4,7 +4,7 @@ function Servicios() {
   return (
     <div className="mt-8 sm:mt-20 pb-20">
       {/* title */}
-      <h1 className="text-primry-400 font-bold font-mono text-3xl p-2 flex items-center justify-center">
+      <h1 className="text-primry-400 font-bold font-mono text-3xl p-2 flex items-center text-black justify-center">
         Servicios Populares
       </h1>
 
