@@ -12,8 +12,9 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          400: "#00E0F3",
-          500: "#00c4fd",
+          400: "#FE7A00",
+          500: "#F7F7F7",
+          600: "#F87700"
         },
         dark: "#222222",
         accent: {
@@ -26,7 +27,7 @@ module.exports = {
   },
   variants: {
   extend: {
-    scale: ["active"],
+    scale: ["active", "hover"],
     backgroundColor: ["active", "first"],
     animation: ["motion-safe"],
   },
