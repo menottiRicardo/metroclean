@@ -2,7 +2,7 @@ import FeaturesCards from "../components/FeaturesCards";
 import Image from "next/image";
 function Features() {
   return (
-    <div className="mt-6 bg-white shadow-md border p-3 mb-4 rounded-md md:flex">
+    <div className="mt-6 bg-white shadow-md border p-3 mb-4 rounded-md md:flex sm:mt-11">
       {/* left section */}
       <div className="p-3 items-center justify-center flex sm:w-6/12 sm:items-center sm:pt-10">
         {/* title */}
