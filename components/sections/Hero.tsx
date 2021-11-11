@@ -19,7 +19,7 @@ function Hero() {
               tu negocio
             </h1>
           </div>
-          <div className="sm:hidden">
+          <div className="sm:hidden mt-3">
             <h1 className="font-bold text-4xl text-black">
               Manejo de personal para agilizar
             </h1>
