@@ -49,7 +49,7 @@ function Logo(props: React.SVGProps<SVGSVGElement>) {
           <stop
             offset="1"
             stopColor="#FAFF00"
-            stop-opacity="0.160341"
+            stopOpacity="0.160341"
           />
         </linearGradient>
         <linearGradient
@@ -66,7 +66,7 @@ function Logo(props: React.SVGProps<SVGSVGElement>) {
           <stop
             offset="0.9995"
             stopColor="#FAFF00"
-            stop-opacity="0.160341"
+            stopOpacity="0.160341"
           />
         </linearGradient>
       </defs>
