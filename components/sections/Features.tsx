@@ -7,7 +7,7 @@ function Features() {
       <div className="p-3 items-center justify-center flex sm:w-6/12 sm:items-center sm:pt-10">
         {/* title */}
         <div>
-          <h1 className="font-extrabold text-4xl">
+          <h1 className="font-extrabold text-4xl text-black">
             Mas que un Outsourcing
           </h1>
 

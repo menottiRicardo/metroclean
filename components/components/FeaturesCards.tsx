@@ -18,7 +18,7 @@ function FeaturesCards({ title, icon }: FeatureCardsProps) {
           )}
         </div>
       </div>
-      <h2 className="font-bold my-3 mx-3 sm:my-3 sm:mx-0">
+      <h2 className="font-bold my-3 mx-3 sm:my-3 sm:mx-0 text-black">
         {title == null ? "Tarifa competitiva" : title}
       </h2>
       <p className="text-gray-500 hidden sm:inline-flex text-justify">

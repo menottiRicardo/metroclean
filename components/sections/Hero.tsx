@@ -13,14 +13,14 @@ function Hero() {
         <div className="w-full">
           {/* hero bold text */}
           <div className="sm:inline hidden">
-            <h1 className="font-bold text-4xl">Manejo de personal</h1>
-            <h1 className="font-bold text-4xl">para agilizar</h1>
+            <h1 className="font-bold text-4xl text-black">Manejo de personal</h1>
+            <h1 className="font-bold text-4xl text-black">para agilizar</h1>
             <h1 className="font-bold text-4xl text-primary-400">
               tu negocio
             </h1>
           </div>
           <div className="sm:hidden">
-            <h1 className="font-bold text-4xl">
+            <h1 className="font-bold text-4xl text-black">
               Manejo de personal para agilizar
             </h1>
             <h1 className="font-bold text-4xl text-primary-400">

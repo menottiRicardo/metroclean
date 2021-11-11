@@ -9,7 +9,7 @@ function Navbar() {
       {/* left side */}
       <div className="p-2 w-full flex sm:hidden items-center">
         <MobileLogo />
-        <h1 className="ml-10 font-bold">Metro Clean</h1>
+        <h1 className="ml-10 font-bold text-black">Metro Clean</h1>
       </div>
       <div className="w-full hidden sm:inline ml-5">
         <div className="relative w-40">
@@ -26,14 +26,14 @@ function Navbar() {
       {/* right side */}
       <div className="w-full sm:inline-flex justify-between hidden">
         <div className="flex w-11/12 justify-around">
-          <a href="#" className="animated-underline text-gray-600">
+          <a href="#" className="animated-underline text-gray-600 underline">
             Inicio
           </a>
-          <a href="#" className="animated-underline">
+          <a href="#" className="animated-underline text-gray-600">
             Servicios
           </a>
           <div className="flex">
-            <a href="#" className="animated-underline">
+            <a href="#" className="animated-underline text-gray-600">
               Contacto
             </a>
             <div className="flex">
