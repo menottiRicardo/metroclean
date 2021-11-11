@@ -14,14 +14,14 @@ function Logo(props: React.SVGProps<SVGSVGElement>) {
       <path
         d="M43.6035 39.6995L219.39 148.211"
         stroke="url(#paint0_linear_104_3)"
-        stroke-width="3"
-        stroke-linecap="round"
+        strokeWidth="3"
+        strokeLinecap="round"
       />
       <path
         d="M34.0654 67.4886L209.852 176"
         stroke="url(#paint1_linear_104_3)"
-        stroke-width="3"
-        stroke-linecap="round"
+        strokeWidth="3"
+        strokeLinecap="round"
       />
       <ellipse
         cx="239.15"
@@ -55,13 +55,13 @@ function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="148.211"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#08CDF9" />
-          <stop offset="0.53125" stop-color="#0DEB73" />
-          <stop offset="0.9994" stop-color="#FAFF00" />
+          <stop stopColor="#08CDF9" />
+          <stop offset="0.53125" stopColor="#0DEB73" />
+          <stop offset="0.9994" stopColor="#FAFF00" />
           <stop
             offset="0.9995"
-            stop-color="#FAFF00"
-            stop-opacity="0.160341"
+            stopColor="#FAFF00"
+            stopOpacity="0.160341"
           />
         </linearGradient>
         <linearGradient
@@ -72,13 +72,13 @@ function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="176"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#08CDF9" />
-          <stop offset="0.53125" stop-color="#0DEB73" />
-          <stop offset="0.9994" stop-color="#FAFF00" />
+          <stop stopColor="#08CDF9" />
+          <stop offset="0.53125" stopColor="#0DEB73" />
+          <stop offset="0.9994" stopColor="#FAFF00" />
           <stop
             offset="0.9995"
-            stop-color="#FAFF00"
-            stop-opacity="0.160341"
+            stopColor="#FAFF00"
+            stopOpacity="0.160341"
           />
         </linearGradient>
       </defs>
