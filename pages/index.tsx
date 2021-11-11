@@ -4,6 +4,7 @@ import Image from "next/image";
 import Navbar from "../components/components/Navbar";
 import Features from "../components/sections/Features";
 import Hero from "../components/sections/Hero";
+import Servicios from "../components/sections/Servicios";
 // import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <div className="layout">
           <Hero />
           <Features />
+          <Servicios />
         </div>
       </main>
 
