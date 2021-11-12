@@ -4,7 +4,7 @@ import { MenuIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 function Navbar() {
   return (
-    <div className="flex justify-between p-2 items-center shadow-sm bg-white">
+    <div className="sticky top-0 flex justify-between p-2 items-center shadow-sm bg-white z-50">
       {/* <p>navbar</p> */}
       {/* left side */}
       <div className="p-2 w-full flex sm:hidden items-center">

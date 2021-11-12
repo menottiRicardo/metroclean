@@ -28,4 +28,23 @@
   .animated-underline:focus {
     background-size: 0 2px, 100% 2px;
   }
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #F7F7F7;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #FE7A00;
+    border-radius: 100vh;
+    border: 3px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #F95340;
+  }
 }

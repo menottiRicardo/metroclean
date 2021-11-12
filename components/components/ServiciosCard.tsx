@@ -5,24 +5,23 @@ interface SerServiciosCardProps {
   url: string;
   style?: string;
 }
-function ServiciosCard({ title, color,url,style }: SerServiciosCardProps) {
+function ServiciosCard({
+  title,
+  color,
+  url,
+  style,
+}: SerServiciosCardProps) {
   return (
-    <div className="active:scale-110 transform ease-in duration-200 active:z-50 cursor-pointer hover:scale-110">
-      <div className="w-full sm:flex">
-        <p className={`z-10 absolute text-white text-2xl flex mt-20 ${style} sm:mt-44 sm:pt-20 cursor-none select-none`}>
-          {title}
-        </p>
-        <div className="flex justify-center">
-          <div className={`relative bg-gray-${color} w-96 h-40 sm:h-screen`}>
-            <Image
-              src={url}
-              layout="fill"
-              objectFit="cover"
-              className="rounded-xl opacity-50 hover:opacity-100"
-            />
-          </div>
-        </div>
+    <div className="cursor-pointer select-none">
+      <div className="relative h-60 w-60 sm:h-80 sm:w-80 hover:scale-105 transform transition duration-300 ease-out">
+        <Image
+          src={url}
+          layout="fill"
+          className="rounded-xl"
+          alt=""
+        />
       </div>
+      <h3 className="text-lg sm:text-2xl mt-3 text-black">{title}</h3>
     </div>
   );
 }
