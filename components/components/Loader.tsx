@@ -38,7 +38,7 @@ const item = {
 function Loader({ loading, setLoading }: LoaderProps) {
   
   return (
-    <div key="loader" className="bg-white">
+    <div key="loader" className="bg-white w-full">
       <motion.div
         className="grid grid-cols-2 sm:grid-cols-3 gap-y-4 sm:p-5 p-2"
         variants={container}
