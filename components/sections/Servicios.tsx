@@ -1,8 +1,32 @@
 import ServiciosCard from "../components/ServiciosCard";
-
+import {motion} from 'framer-motion'
+const item = {
+  hidden: {
+    opacity: 0,
+    y: 25,
+    rotate:10,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: [0.03, 0.01, -0.05, 1],
+      duration: 1.6,
+    },
+    rotate:0
+  },
+  exit: {
+    opacity: 0,
+    y: -200,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.8,
+    },
+  },
+};
 function Servicios() {
   return (
-    <div className="mt-8 sm:mt-20 pb-10">
+    <motion.div className="mt-8 sm:mt-20 pb-10" variants={item} initial="hidden" animate="show" exit="exit" key="servicio">
       {/* title */}
       <h1 className="text-primry-400 font-bold text-2xl p-2 flex items-center text-black justify-center">
         Servicios Populares
@@ -38,7 +62,7 @@ function Servicios() {
           />
         {/* </div> */}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
