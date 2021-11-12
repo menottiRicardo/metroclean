@@ -1,14 +1,23 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import Loader from "../components/components/Loader";
 import Navbar from "../components/components/Navbar";
 import Contact from "../components/sections/Contact";
 import Features from "../components/sections/Features";
 import Hero from "../components/sections/Hero";
 import Servicios from "../components/sections/Servicios";
+import { motion } from "framer-motion";
 // import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  const [loading, setLoading] = useState(true);
+  // useEffect(() => {
+  //   loading
+  //     ? document.querySelector("body").classList.add("loading")
+  //     : document.querySelector("body").classList.remove("loading");
+  // }, [loading]);
   return (
     <div>
       <Head>
@@ -20,16 +29,26 @@ const Home: NextPage = () => {
         <link rel="icon" href="/metro-ico-192" />
       </Head>
 
-      <main className="shadow-md bg-primary-500">
-        <Navbar />
-        <div className="layout">
-          <Hero />
-          <Features />
-          <Servicios />
-          <Contact />
-        </div>
-      </main>
-
+      {loading ? (
+        <motion.div key="loader">
+          <Loader loading={loading} setLoading={setLoading} />
+        </motion.div>
+      ) : (
+        <motion.main
+          className="shadow-md bg-primary-500"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <Navbar />
+          <div className="layout">
+            <Hero />
+            <Features />
+            <Servicios />
+            <Contact />
+          </div>
+        </motion.main>
+      )}
       {/* <footer className="bg-primary-500">
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

@@ -2,6 +2,29 @@ import Button from "../components/Button";
 import Image from "next/image";
 import { ArrowDownIcon } from "@heroicons/react/solid";
 import Logo from "../components/Logo";
+import {motion} from 'framer-motion'
+const image = {
+  hidden: {
+    opacity: 0,
+    x: 20,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      ease: [0.6, 0.01, -0.05, 0.95],
+      duration: 1.6,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -200,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.8,
+    },
+  },
+};
 function Hero() {
   return (
     <div className="pt-3 sm:mt-10">
@@ -44,19 +67,19 @@ function Hero() {
         </div>
 
         {/* right Side */}
-        <div className="w-full">
+        <motion.div className="w-full" variants={image} initial="hidden" animate="show" exit="exit">
           {/* image */}
           <div className="flex justify-center">
             <div className="relative w-96 h-96 mt-4 ">
               <Image
-                src="https://metrocleansite.s3.amazonaws.com/empkeados.webp"
+                src="/empkeados.webp"
                 layout="fill"
                 objectFit="fill"
                 className="rounded-lg"
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="justify-center flex mt-4 animate-bounce">
         <ArrowDownIcon className="h-5 w-5 justify-center text-black 2xl:hidden hidden sm:inline-flex" />
