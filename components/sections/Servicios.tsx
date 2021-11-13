@@ -3,8 +3,7 @@ import {motion} from 'framer-motion'
 const item = {
   hidden: {
     opacity: 0,
-    y: 25,
-    rotate:10,
+    y: -70,
   },
   show: {
     opacity: 1,

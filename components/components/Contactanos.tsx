@@ -29,7 +29,7 @@ function Contactanos({ title, icon }: ContactCard) {
             />
             <label
               htmlFor="nombre"
-              className="absolute left-0 -top-3 text-gray-300 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all"
+              className="absolute left-0 -top-3 text-gray-300 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all peer-focus:text-sm peer-focus:text-primary-400"
             >
               Nombre Completo
             </label>
