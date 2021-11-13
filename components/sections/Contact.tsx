@@ -9,8 +9,8 @@ import {
 import Contactanos from "../components/Contactanos";
 function Contact() {
   return (
-    <div className="relative">
-      <div className="md:left-20 absolute z-10 cursor-pointer top-2 left-2 md:top-20">
+    <div className="grid grid-cols-3 gap-3 gap-y-10 items-center justify-items-center relative">
+      <div className="">
         <ContactCard
           title="Agiliza tus Procesos"
           icon={
@@ -19,13 +19,13 @@ function Contact() {
         />
       </div>
 
-      <div className="absolute z-10 cursor-pointer top-2 right-2 ml-3 sm:right-10 sm:top-20">
+      <div className="">
         <ContactCard
           title="Crece tu Negocio"
           icon={<StarIcon className="h-5 w-5 text-white" />}
         />
       </div>
-      <div className="absolute z-10 sm:top-5 sm:left-96 sm:ml-16 left-32 ml-3 cursor-pointer top-2">
+      <div className="">
         <ContactCard
           title="Excelente Servicio"
           icon={
@@ -33,21 +33,20 @@ function Contact() {
           }
         />
       </div>
-
-      <div className="absolute z-10 sm:bottom-10 md:left-96 ml-20 cursor-pointer left-14 bottom-1">
+      <div className="col-span-3 z-40">
         <Contactanos
           title="Contactanos"
-          icon={
-            <PhoneOutgoingIcon className="h-5 w-5 text-black" />
-          }
+          icon={<PhoneOutgoingIcon className="h-5 w-5 text-black" />}
         />
       </div>
-      <div className="relative h-60 w-full sm:h-96 sm:w-full bg-gray-500 rounded-xl">
+      <div className="absolute rounded-xl w-full h-full top-0 left-0 opacity-40 overflow-hidden z-0">
         <Image
           src="https://metrocleansite.s3.amazonaws.com/espalda.webp"
-          layout="fill"
+          layout="responsive"
           className="rounded-xl opacity-20"
           alt=""
+          width={300}
+          height={450}
           objectFit="cover"
         />
       </div>

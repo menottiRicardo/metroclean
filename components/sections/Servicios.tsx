@@ -11,7 +11,7 @@ const item = {
     y: 0,
     transition: {
       ease: [0.03, 0.01, -0.05, 1],
-      duration: 1.6,
+      duration: 0.5,
     },
     rotate:0
   },
@@ -26,10 +26,10 @@ const item = {
 };
 function Servicios() {
   return (
-    <motion.div className="mt-8 sm:mt-20 pb-10" variants={item} initial="hidden" animate="show" exit="exit" key="servicio">
+    <motion.div className="mt-8 sm:mt-20 pb-10" variants={item} initial="hidden" whileInView="show" exit="exit" key="servicio" viewport={{once:true}}>
       {/* title */}
       <h1 className="text-primry-400 font-bold text-2xl p-2 flex items-center text-black justify-center">
-        Servicios Populares
+        Servicios Destacados
       </h1>
 
       {/* servicios */}

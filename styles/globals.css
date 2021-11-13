@@ -12,6 +12,26 @@
     max-width: 68.75rem;
     @apply w-11/12 mx-auto;
   }
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #edf2f7;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FE7A00;
+    border-radius: 100vh;
+    border: 3px solid #edf2f7;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F95340;
+  }
   
 }
 
@@ -33,6 +53,7 @@
     height: 10px;
   }
 
+
   .scrollbar::-webkit-scrollbar-track {
     border-radius: 100vh;
     background: #F7F7F7;
@@ -47,4 +68,5 @@
   .scrollbar::-webkit-scrollbar-thumb:hover {
     background: #F95340;
   }
+  
 }

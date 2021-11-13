@@ -1,8 +1,9 @@
 import Button from "../components/Button";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowDownIcon } from "@heroicons/react/solid";
 import Logo from "../components/Logo";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 const image = {
   hidden: {
     opacity: 0,
@@ -36,8 +37,12 @@ function Hero() {
         <div className="w-full">
           {/* hero bold text */}
           <div className="sm:inline hidden">
-            <h1 className="font-bold text-4xl text-black">Manejo de personal</h1>
-            <h1 className="font-bold text-4xl text-black">para agilizar</h1>
+            <h1 className="font-bold text-4xl text-black">
+              Manejo de personal
+            </h1>
+            <h1 className="font-bold text-4xl text-black">
+              para agilizar
+            </h1>
             <h1 className="font-bold text-4xl text-primary-400">
               tu negocio
             </h1>
@@ -61,13 +66,23 @@ function Hero() {
 
           {/* buttons */}
           <div className="mt-4 sm:mt-16 justify-center flex">
-            <Button text="Contactanos" color="primary" />
+            <Link href="/Contacto" passHref>
+              <motion.div whileTap={{ rotate:20, opacity:0, y:-20, x:20}}  className="z-20">
+                <Button text="Contactanos" color="primary" />
+              </motion.div>
+            </Link>
             <Button text="Servicios" />
           </div>
         </div>
 
         {/* right Side */}
-        <motion.div className="w-full" variants={image} initial="hidden" animate="show" exit="exit">
+        <motion.div
+          className="w-full"
+          variants={image}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
           {/* image */}
           <div className="flex justify-center">
             <div className="relative w-96 h-96 mt-4 ">

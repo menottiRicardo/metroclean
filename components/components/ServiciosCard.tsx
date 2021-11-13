@@ -21,7 +21,7 @@ function ServiciosCard({
           alt=""
         />
       </div>
-      <h3 className="text-lg sm:text-2xl mt-3 text-black">{title}</h3>
+      <h3 className="text-lg sm:text-2xl mt-3 text-black flex justify-center">{title}</h3>
     </div>
   );
 }

@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   //     : document.querySelector("body").classList.remove("loading");
   // }, [loading]);
   return (
-    <div>
+    <motion.div exit={{opacity:0}}>
       <Head>
         <title>Metro Clean</title>
         <meta
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
           </span>
         </a>
       </footer> */}
-    </div>
+    </motion.div>
   );
 };
 
