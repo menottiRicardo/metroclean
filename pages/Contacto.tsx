@@ -94,7 +94,7 @@ function Contacto() {
           {/* bottom part */}
           <div className="grid grid-cols-1 md:grid-cols-3 justify-around items-center mt-10 md:mt-28">
             <div className="">
-              <h1 className="font-bold flex justify-center">
+              <h1 className="font-bold flex justify-center text-black">
                 Comunicacion General
               </h1>
 
@@ -117,7 +117,7 @@ function Contacto() {
             </div>
 
             <div className="">
-              <h1 className="font-bold flex justify-center">
+              <h1 className="font-bold flex justify-center text-black">
                 Trabaja con Nosotros
               </h1>
 

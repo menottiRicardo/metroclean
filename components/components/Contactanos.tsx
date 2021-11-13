@@ -29,7 +29,7 @@ function Contactanos({ title, icon }: ContactCard) {
             />
             <label
               htmlFor="nombre"
-              className="absolute left-0 -top-3 text-gray-300 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all peer-focus:text-sm peer-focus:text-primary-400"
+              className="absolute left-0 -top-3 text-gray-300 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all peer-focus:text-sm peer-focus:text-white-400"
             >
               Nombre Completo
             </label>
@@ -45,7 +45,7 @@ function Contactanos({ title, icon }: ContactCard) {
             />
             <label
               htmlFor="email"
-              className="absolute left-0 -top-3.5 text-gray-300 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all"
+              className="absolute left-0 -top-3.5 text-gray-300 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-2 transition-all peer-focus:text-sm peer-focus:text-white-400"
             >
               Email
             </label>
@@ -69,7 +69,7 @@ function Contactanos({ title, icon }: ContactCard) {
             />
             <label
               htmlFor="descripcion"
-              className="absolute left-0 -top-3.5 text-gray-300 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:-top-0.5 transition-all"
+              className="absolute left-0 -top-3.5 text-gray-300 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:-top-0.5 transition-all peer-focus:text-sm peer-focus:text-white-400"
             >
               Mensaje
             </label>
@@ -77,7 +77,7 @@ function Contactanos({ title, icon }: ContactCard) {
           <div className="flex justify-center items-center cursor-auto">
             <button
               type="submit"
-              className="py-3 bg-white px-6 rounded-full my-3 active:scale-105 transform duration-200 ease-out select-none outline-none  cursor-pointer"
+              className="py-3 bg-white px-6 rounded-full my-3 active:scale-105 transform duration-200 ease-out select-none outline-none  cursor-pointer text-black"
               onClick={(event) => event.preventDefault()}
             >
               Enviar
