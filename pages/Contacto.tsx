@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Navbar from "../components/components/Navbar";
+import Banner from "../components/sections/Banner";
 function Contacto() {
   return (
     <motion.div
@@ -15,10 +16,125 @@ function Contacto() {
         />
         <link rel="icon" href="/metro-ico-192" />
       </Head>
-      <main>
+      <main className="bg-primary-500 h-screen">
         <Navbar />
-        <div className="layout">
-            
+        {/* <Banner /> */}
+        <div className="layout md:mt-16">
+          {/* <div className="">
+            <h1 className="font-bold sm:text-2xl text-lg text-black uppercase sm:flex sm:text-justify">
+              Cuentanos que Tienes en mente
+            </h1>
+          </div> */}
+          <div className="bg-white mt-4 rounded-md p-3 shadow-lg">
+            <h1 className="font-bold sm:text-2xl text-lg text-black uppercase flex justify-center">
+              Cuentanos que Tienes en mente
+            </h1>
+            <form className="p-1 mt-10" action="#" method="POST">
+              <div className="relative">
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  className="peer h-10 w-full border-b-2 border-primary-400 focus:outline-none focus:border-orange-800 bg-white text-black placeholder-primary-400"
+                  autoComplete="off"
+                  placeholder="N"
+                />
+                <label
+                  htmlFor="nombre"
+                  className="absolute left-0 -top-3 text-gray-400 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-primary-400 peer-placeholder-shown:top-2 transition-all peer-focus:text-sm peer-focus:text-primary-400"
+                >
+                  Nombre Completo
+                </label>
+              </div>
+              <div className="relative my-5">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  className="peer h-10 w-full border-b-2 border-primary-400 focus:outline-none focus:border-orange-800 bg-white text-black placeholder-primary-400"
+                  autoComplete="off"
+                  placeholder="E"
+                />
+                <label
+                  htmlFor="email"
+                  className="absolute left-0 -top-3 text-gray-400 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-primary-400 peer-placeholder-shown:top-2 transition-all peer-focus:text-sm peer-focus:text-primary-400"
+                >
+                  Email
+                </label>
+              </div>
+              <div className="relative pb-3 mt-1 h-20">
+                <textarea
+                  id="descripcion"
+                  name="descripcion"
+                  rows={4}
+                  cols={80}
+                  autoComplete="off"
+                  placeholder="M"
+                  className="peer h-10 w-full border-b-2 border-primary-400 focus:outline-none focus:border-orange-800 bg-white text-black placeholder-primary-400"
+                />
+                <label
+                  htmlFor="descripcion"
+                  className="absolute left-0 -top-3 text-gray-400 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-primary-400 peer-placeholder-shown:top-0.5 transition-all peer-focus:text-sm peer-focus:text-primary-400"
+                >
+                  Mensaje
+                </label>
+              </div>
+              <div className="flex justify-center items-center cursor-auto">
+                <button
+                  type="submit"
+                  className="py-3 bg-primary-400 px-6 rounded-full my-3 active:scale-105 transform duration-200 ease-out select-none outline-none  cursor-pointer text-white"
+                  onClick={(event) => event.preventDefault()}
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+
+          {/* bottom part */}
+          <div className="grid grid-cols-1 md:grid-cols-3 justify-around items-center mt-10 md:mt-28">
+            <div className="">
+              <h1 className="font-bold flex justify-center">
+                Comunicacion General
+              </h1>
+
+              <div className="w-full">
+                <p className="text-gray-700 flex justify-center text-center">
+                  Para consultas generales, tarifas y asocionaciones
+                  porfavor contacte
+                </p>
+                <a
+                  className="text-primary-400 hover:underline cursor-pointer flex justify-center"
+                  href="mailto:gerencia@metrocleanpa.com"
+                >
+                  gerencia@metrocleanpa.com
+                </a>
+              </div>
+            </div>
+
+            <div className="flex sm:justify-start justify-center">
+              <span className="sm:border-r-2 border-gray-500 h-20 border-b-2 w-44 sm:border-b-0" />
+            </div>
+
+            <div className="">
+              <h1 className="font-bold flex justify-center">
+                Trabaja con Nosotros
+              </h1>
+
+              <div className="w-full">
+                <p className="text-gray-700 flex justify-center text-center">
+                  Para Oportunidades, horarios y consultas
+                </p>
+                <a
+                  className="text-primary-400 hover:underline cursor-pointer flex justify-center"
+                  href="mailto:gerencia@metrocleanpa.com"
+                >
+                  reclutamiento@metrocleanpa.com
+                </a>
+              </div>
+            </div>
+
+          </div>
         </div>
       </main>
     </motion.div>

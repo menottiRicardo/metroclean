@@ -29,9 +29,7 @@ const image = {
 function Hero() {
   return (
     <div className="pt-3 sm:mt-10">
-      {/* <div className="relative">
-        <Logo />
-      </div> */}
+      
       {/* left side */}
       <div className="sm:flex sm:justify-between sm:items-center">
         <div className="w-full">
@@ -71,7 +69,11 @@ function Hero() {
                 <Button text="Contactanos" color="primary" />
               </motion.div>
             </Link>
+            <Link href="/servicios" passHref>
+            <motion.div whileTap={{ rotate:-20, opacity:0, y:-20, x:20}}  className="z-20">
             <Button text="Servicios" />
+            </motion.div>
+            </Link>
           </div>
         </div>
 

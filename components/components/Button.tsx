@@ -10,7 +10,7 @@ function Button({ text, color }: ButtonProps) {
     textColor = "text-white"
   }
   return (
-    <button className={`rounded-md border-1 shadow-md ${bg} w-full font-medium hover:cursor-pointer m-2 sm:w-32 hover:scale-105 hover:shadow-lg sm:mx-7`}>
+    <button className={`rounded-md border-1 shadow-md ${bg} w-11/12 font-medium hover:cursor-pointer m-2 sm:w-32 hover:scale-105 hover:shadow-lg sm:mx-7`}>
       <p className={`${textColor} font-medium px-8 py-3 text-base sm:text-sm justify-center flex`}>{text}</p>
     </button>
   );
