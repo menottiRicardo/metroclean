@@ -36,7 +36,7 @@ function Navbar() {
               Inicio
             </a>
           </Link>
-          <a href="#" className="animated-underline text-gray-600">
+          <a href="/servicios" className="animated-underline text-gray-600">
             Servicios
           </a>
           <div className="flex">
