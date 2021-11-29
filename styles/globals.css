@@ -13,8 +13,8 @@
     @apply w-11/12 mx-auto;
   }
   ::-webkit-scrollbar {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 10px;
   }
   ::-webkit-scrollbar-track {
     border-radius: 100vh;

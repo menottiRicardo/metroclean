@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           exit={{ opacity: 0 }}
         >
           <Navbar />
-          <div className="layout">
+          <div className="layout pb-10">
             <Hero />
             <Features />
             <Servicios />

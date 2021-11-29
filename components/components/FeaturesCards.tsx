@@ -6,8 +6,8 @@ interface FeatureCardsProps {
 }
 function FeaturesCards({ title, icon }: FeatureCardsProps) {
   return (
-    <div className="flex p-2 sm:inline">
-      <div className="bg-primary-400 rounded-xl flex justify-center items-center w-16 h-16 sm:w-16 sm:h-16">
+    <div className="flex sm:inline relative items-center justify-center">
+      <div className="bg-primary-400 rounded-xl flex justify-center items-center w-12 h-12 sm:w-16 sm:h-16">
         <div className="py-4 px-3">
           {icon == "S" ? (
             <p className="text-white font-extrabold font-mono text-4xl w-10 h-10 flex items-center justify-center">

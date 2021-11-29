@@ -64,7 +64,7 @@ function Hero() {
 
           {/* buttons */}
           <div className="mt-4 sm:mt-16 justify-center flex">
-            <Link href="/Contacto" passHref>
+            <Link href="/contacto" passHref>
               <motion.div whileTap={{ rotate:20, opacity:0, y:-20, x:20}}  className="z-20">
                 <Button text="Contactanos" color="primary" />
               </motion.div>

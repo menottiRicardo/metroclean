@@ -16,15 +16,10 @@ function Contacto() {
         />
         <link rel="icon" href="/metro-ico-192" />
       </Head>
-      <main className="bg-primary-500 h-screen">
+      <main className="bg-primary-500 h-full">
         <Navbar />
         {/* <Banner /> */}
         <div className="layout md:mt-16">
-          {/* <div className="">
-            <h1 className="font-bold sm:text-2xl text-lg text-black uppercase sm:flex sm:text-justify">
-              Cuentanos que Tienes en mente
-            </h1>
-          </div> */}
           <div className="bg-white mt-4 rounded-md p-3 shadow-lg">
             <h1 className="font-bold sm:text-2xl text-lg text-black uppercase flex justify-center">
               Cuentanos que Tienes en mente
@@ -92,7 +87,7 @@ function Contacto() {
           </div>
 
           {/* bottom part */}
-          <div className="grid grid-cols-1 md:grid-cols-3 justify-around items-center mt-10 md:mt-28">
+          <div className="grid grid-cols-1 md:grid-cols-3 justify-around items-center mt-10 md:mt-28 pb-20">
             <div className="">
               <h1 className="font-bold flex justify-center text-black">
                 Comunicacion General
@@ -112,8 +107,8 @@ function Contacto() {
               </div>
             </div>
 
-            <div className="flex sm:justify-start justify-center">
-              <span className="sm:border-r-2 border-gray-500 h-20 border-b-2 w-44 sm:border-b-0" />
+            <div className="flex sm:justify-start justify-center items-center">
+              <span className="sm:border-r-2 border-gray-500 h-20 border-b-2 w-44 sm:border-b-0 mb-16 sm:mb-0" />
             </div>
 
             <div className="">
