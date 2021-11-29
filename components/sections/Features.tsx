@@ -1,6 +1,6 @@
 import FeaturesCards from "../components/FeaturesCards";
 import Image from "next/image";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 const item = {
   offscreen: {
     opacity: 0,
@@ -25,7 +25,15 @@ const item = {
 };
 function Features() {
   return (
-    <motion.div className="mt-6 bg-white shadow-md border p-3 mb-4 rounded-md md:flex sm:mt-11" variants={item} initial="offscreen" whileInView="onscreen" exit="exit" key="features" viewport={{once:true}}>
+    <motion.div
+      className="mt-6 bg-white shadow-md border p-3 mb-4 rounded-md md:flex sm:mt-11"
+      variants={item}
+      initial="offscreen"
+      whileInView="onscreen"
+      exit="exit"
+      key="features"
+      viewport={{ once: true }}
+    >
       {/* left section */}
       <div className="p-3 items-center justify-center flex sm:w-6/12 sm:items-center sm:pt-10">
         {/* title */}
@@ -51,12 +59,20 @@ function Features() {
       </div>
 
       {/* right section */}
-      <div className="grid grid-cols-2 gap-3 sm:w-5/12 md:mx-7">
-        <motion.div><FeaturesCards /></motion.div>
-        
-        <FeaturesCards title="Manejo de 5 S" icon="S"/>
-        <FeaturesCards />
-        <FeaturesCards />
+      <div className="grid grid-cols-2 sm:w-5/12 md:mx-7 sm:gap-4">
+        <motion.div>
+          <FeaturesCards />
+        </motion.div>
+
+        <motion.div>
+          <FeaturesCards title="Manejo de 5 S" icon="S" />
+        </motion.div>
+        <motion.div>
+          <FeaturesCards />
+        </motion.div>
+        <motion.div>
+          <FeaturesCards />
+        </motion.div>
       </div>
     </motion.div>
   );

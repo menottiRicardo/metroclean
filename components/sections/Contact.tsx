@@ -9,7 +9,7 @@ import {
 import Contactanos from "../components/Contactanos";
 function Contact() {
   return (
-    <div className="grid grid-cols-3 gap-3 gap-y-10 items-center justify-items-center relative">
+    <div className="grid grid-cols-3 gap-3 gap-y-10 items-center justify-items-center relative py-10 sm:px-10">
       <div className="">
         <ContactCard
           title="Agiliza tus Procesos"

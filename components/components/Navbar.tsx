@@ -3,7 +3,12 @@ import MobileLogo from "./MobileLogo";
 import { MenuIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 function Navbar() {
+  const router = useRouter();
+  const active = " border-b-2 border-[#FE7A00] border-dashed";
+  console.log(router.pathname);
   return (
     <div className="sticky top-0 flex justify-between p-2 items-center shadow-sm bg-white z-50">
       {/* <p>navbar</p> */}
@@ -30,18 +35,30 @@ function Navbar() {
 
       {/* right side */}
       <div className="w-full sm:inline-flex justify-between hidden">
-        <div className="flex w-11/12 justify-around">
+        <div className="flex w-11/12 justify-end">
           <Link href="/">
-            <a href="#" className="animated-underline text-gray-600">
+            <a
+              href="#"
+              className={`animated-underline text-gray-600 ml-5${
+                router.pathname === "/" ? active : ""
+              }`}
+            >
               Inicio
             </a>
           </Link>
-          <a href="/servicios" className="animated-underline text-gray-600">
+          <a
+            href="/servicios"
+            className={`animated-underline text-gray-600 ml-10${
+              router.pathname === "/servicios" ? active : ""
+            }`}
+          >
             Servicios
           </a>
           <div className="flex">
-            <Link href="/Contacto">
-              <a className="animated-underline text-gray-600">
+            <Link href="/contacto">
+              <a className={`animated-underline text-gray-600 ml-10${
+              router.pathname === "/contacto" ? active : ""
+            }`}>
                 Contacto
               </a>
             </Link>
