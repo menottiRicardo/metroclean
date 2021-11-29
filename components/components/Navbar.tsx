@@ -10,7 +10,7 @@ function Navbar() {
   const active = " border-b-2 border-[#FE7A00] border-dashed";
   console.log(router.pathname);
   return (
-    <div className="sticky top-0 flex justify-between p-2 items-center shadow-sm bg-white z-50">
+    <nav className="sticky top-0 flex justify-between p-2 items-center shadow-sm bg-white z-50">
       {/* <p>navbar</p> */}
       {/* left side */}
       <div className="p-2 w-full flex sm:hidden items-center">
@@ -46,14 +46,16 @@ function Navbar() {
               Inicio
             </a>
           </Link>
+          <Link href="/servicios">
           <a
-            href="/servicios"
+            
             className={`animated-underline text-gray-600 ml-10${
               router.pathname === "/servicios" ? active : ""
             }`}
           >
             Servicios
           </a>
+          </Link>
           <div className="flex">
             <Link href="/contacto">
               <a className={`animated-underline text-gray-600 ml-10${
@@ -122,7 +124,7 @@ function Navbar() {
         </svg>
         <MenuIcon className="h-9 w-10 text-gray-600 sm:hidden" />
       </div>
-    </div>
+    </nav>
   );
 }
 

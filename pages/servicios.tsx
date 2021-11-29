@@ -29,8 +29,8 @@ function Servicios() {
           Servicios
         </h1>
 
-        {list.map(() => (
-          <ItemList />
+        {list.map((item) => (
+          <ItemList key={item}/>
         ))}
       </main>
     </motion.div>
