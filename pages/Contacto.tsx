@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/components/Navbar";
 import Banner from "../components/sections/Banner";
-function Contacto() {
+const Contacto: NextPage = () =>  {
   return (
     <motion.div
       initial={{ opacity: 0, backgroundColor: "#FE7A00" }}
