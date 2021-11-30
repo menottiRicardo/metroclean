@@ -56,10 +56,10 @@ function Navbar() {
             </a>
           </Link>
           <div className="flex">
-            <Link href="/contacto">
+            <Link href="/Contacto">
               <a
                 className={`animated-underline text-gray-600 ml-10${
-                  router.pathname === "/contacto" ? active : ""
+                  router.pathname === "/Contacto" ? active : ""
                 }`}
               >
                 Contacto
