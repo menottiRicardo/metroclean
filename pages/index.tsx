@@ -13,11 +13,6 @@ import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   loading
-  //     ? document.querySelector("body").classList.add("loading")
-  //     : document.querySelector("body").classList.remove("loading");
-  // }, [loading]);
   return (
     <motion.div exit={{opacity:0}}>
       <Head>
@@ -49,23 +44,6 @@ const Home: NextPage = () => {
           </div>
         </motion.main>
       )}
-      {/* <footer className="bg-primary-500">
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={""}>
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              width={72}
-              height={16}
-            />
-          </span>
-        </a>
-      </footer> */}
     </motion.div>
   );
 };

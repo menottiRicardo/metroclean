@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-metroclean-dev-184429-authRole",
+      "UnauthRoleArn": "arn:aws:iam::877593040745:role/amplify-metroclean-dev-184429-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::877593040745:role/amplify-metroclean-dev-184429-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-metroclean-dev-184429-deployment",
+      "UnauthRoleName": "amplify-metroclean-dev-184429-unauthRole",
+      "StackName": "amplify-metroclean-dev-184429",
+      "StackId": "arn:aws:cloudformation:us-east-1:877593040745:stack/amplify-metroclean-dev-184429/54519d50-516e-11ec-9bc9-12db6b84912f",
+      "AmplifyAppId": "d37cmmn68r1u60"
+    }
+  }
+}
