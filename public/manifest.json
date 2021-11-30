@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Metro Clean Services",
-    "short_name": "Metro Clean",
-    "description": "metrodash",
+    "name": "Metro Clean",
+    "short_name": "MetroClean",
+    "description": "metroclean website",
     "icons": [
         {
             "src": "/icon-192x192.png",
