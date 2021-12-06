@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const item = {
@@ -40,6 +40,11 @@ function ItemList({
   url
 }: ItemListProps) {
   const [pressed, setPressed] = useState(false);
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    setLoading(false)
+  })
+  const style="animate-pulse"
   return (
     <motion.div
       className="w-full md:flex items-center select-none h-full mt-10 md:justify-between md:px-20 grid grid-cols-1 justify-center bg-white md:bg-transparent rounded-md p-4"
@@ -98,7 +103,7 @@ function ItemList({
         )}
       </motion.div>
 
-      <div className="bg-gray-600 rounded-xl md:h-72 md:w-96 cursor-pointer h-40 w-full row-start-1">
+      <div className={`bg-gray-600 rounded-xl md:h-72 md:w-96 cursor-pointer h-40 w-full row-start-1 ${loading == true ? style : ''}`}>
         <motion.div
           className="md:h-72 md:w-96 relative w-full h-40"
           initial={{ y: -150, opacity: 0 }}

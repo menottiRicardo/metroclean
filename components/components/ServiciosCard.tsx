@@ -13,7 +13,7 @@ function ServiciosCard({
   style,
 }: SerServiciosCardProps) {
   return (
-    <Link href={`/servicios/${title}`} passHref>
+    <Link href={`/servicios`} passHref>
     <div className="cursor-pointer select-none">
       <div className="relative h-60 w-60 sm:h-80 sm:w-80 hover:scale-105 transform transition duration-300 ease-out">
         <Image
