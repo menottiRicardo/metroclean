@@ -69,6 +69,7 @@ function Navbar() {
               <a
                 href="https://www.instagram.com/metro.clean/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -87,6 +88,7 @@ function Navbar() {
               <a
                 href="https://wa.me/50769822128"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,6 +113,7 @@ function Navbar() {
         <a
           href="https://www.instagram.com/metro.clean/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -128,6 +131,7 @@ function Navbar() {
         <a
           href="https://wa.me/50769822128"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
