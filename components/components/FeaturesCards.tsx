@@ -1,10 +1,15 @@
-import { CashIcon } from "@heroicons/react/outline";
 
 interface FeatureCardsProps {
   title?: string;
-  icon?: string;
+  icon: any;
+  description: string;
 }
-function FeaturesCards({ title, icon }: FeatureCardsProps) {
+function FeaturesCards({
+  title,
+  icon,
+  description,
+}: FeatureCardsProps) {
+  console.log(icon)
   return (
     <div className="flex sm:inline relative items-center justify-center">
       <div className="bg-primary-400 rounded-xl flex justify-center items-center w-12 h-12 sm:w-16 sm:h-16">
@@ -14,7 +19,7 @@ function FeaturesCards({ title, icon }: FeatureCardsProps) {
               S
             </p>
           ) : (
-            <CashIcon className="w-10 h-10 text-white" />
+            icon
           )}
         </div>
       </div>
@@ -22,8 +27,7 @@ function FeaturesCards({ title, icon }: FeatureCardsProps) {
         {title == null ? "Tarifa competitiva" : title}
       </h2>
       <p className="text-gray-500 hidden sm:inline-flex text-justify">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Voluptatibus repudiandae inventore quis dolorum accusamus
+        {description}
       </p>
     </div>
   );

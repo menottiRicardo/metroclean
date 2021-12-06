@@ -3,7 +3,7 @@ import { Item } from "framer-motion/types/components/Reorder/Item";
 
 import Navbar from "../components/components/Navbar";
 import ItemList from "../components/sections/servicesPage/ItemList";
-import ServiceCard from "../components/sections/servicesPage/ServiceCard";
+
 const listAnimation = {
   visible: {
     opacity: 1,
@@ -15,7 +15,62 @@ const listAnimation = {
     opacity: 0,
   },
 };
-const list = ["item1", "item1", "item1", "item1"];
+const list = [
+  {
+    title: "Pickeadores            ",
+    description1:
+      "Realizacion de tareas de pick de sku o mercancia en su ubicación",
+    description2:
+      "Interpretacion de codigos, descripcion de productos",
+    description3: "Utilizacion de herramientas de pickin, PDT",
+    url:'https://metrocleansite.s3.amazonaws.com/pickeadores.webp'
+  },
+  {
+    title: "Distribucion de Mercancias",
+    description1:
+      "Personal calificado para tareas de entregas a puntos de supermercados y rutas asignadas",
+    description2:
+      "Capacitado para realizar proceso de carga de camiones por facturas, lista de empaque",
+    description3: "Responsable de la descarga y carga en puntos de ventas o rutas asignadas",
+    url:'https://metrocleansite.s3.amazonaws.com/mercancia.webp'
+  },
+  {
+    title: "Maquilas",
+    description1:
+      "Segregacion de sku o productos asignados",
+    description2:
+      "Manejo de inventarios para la realizacion de maquilas",
+    description3: "Manejo de informes entradas y salidas en el proceso de maquila ( Control de Inventario )",
+    url:'https://metrocleansite.s3.amazonaws.com/maquilas.webp'
+  },
+  {
+    title: "Mantenimiento de flotas",
+    description1:
+      "Mantenimiento preventivo",
+    description2:
+      "Limpieza interior y exterior",
+    description3: "",
+    url:'https://metrocleansite.s3.amazonaws.com/brinks.webp'
+  },
+  {
+    title: "Supervisor de bodega",
+    description1:
+      "Control de Inventarios a nivel de Operaciones",
+    description2:
+      "Manejo y adminitracion de Personal Operativo",
+    description3: "Manejo y adminitracion de Personal Operativo",
+    url:'https://metrocleansite.s3.amazonaws.com/kadir-ensenado.webp'
+  },
+  {
+    title: "Empacadores",
+    description1:
+      "Capacitados para realizar tareas de empaque , reempaque, etiquetado de mercancia y promociones",
+    description2:
+      "Equipados con sus equipos de seguridad de proteccion personal",
+    description3: "Suministrado con implementos de bioseguridad y carnet de salud",
+    url:'https://metrocleansite.s3.amazonaws.com/empacadores.webp'
+  },
+];
 function Servicios() {
   return (
     <motion.div
@@ -30,7 +85,7 @@ function Servicios() {
         </h1>
 
         {list.map((item) => (
-          <ItemList key={item}/>
+          <ItemList key={item.title} title={item.title} description1={item.description1} description2={item.description2} description3={item.description3} url={item.url}/>
         ))}
       </main>
     </motion.div>

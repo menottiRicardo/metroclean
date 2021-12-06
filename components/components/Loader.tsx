@@ -38,7 +38,7 @@ const item = {
 function Loader({ loading, setLoading }: LoaderProps) {
   
   return (
-    <div key="loader" className="bg-white w-screen sm:w-full">
+    <div key="loaders" className="bg-white w-screen sm:w-full h-screen scrollbar-hide">
       <motion.div
         className="grid grid-cols-2 sm:grid-cols-3 gap-y-4 sm:p-5 p-2"
         variants={container}
@@ -46,6 +46,7 @@ function Loader({ loading, setLoading }: LoaderProps) {
         animate="show"
         exit="exit"
         onAnimationComplete={() => setLoading(false)}
+        key="loader"
       >
         <motion.div
           className="w-3/4 2xl:w-1/4 sm:w-2/6 sm:col-span-2"

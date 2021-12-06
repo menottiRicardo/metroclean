@@ -1,17 +1,30 @@
 import FeaturesCards from "../components/FeaturesCards";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { UserGroupIcon } from "@heroicons/react/solid";
+import { CashIcon } from "@heroicons/react/outline";
+const container = {
+  hidden: {
+    y: -10,
+  },
+  show: {
+    y: 0,
+    transition: {
+      staggerChildren: 0.35,
+    },
+  },
+};
 const item = {
-  offscreen: {
+  hidden: {
     opacity: 0,
     y: 100,
   },
-  onscreen: {
+  show: {
     opacity: 1,
     y: 0,
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
-      duration: 0.8,
+      duration: 1.6,
     },
   },
   exit: {
@@ -28,8 +41,8 @@ function Features() {
     <motion.div
       className="mt-6 bg-white shadow-md border p-3 mb-4 rounded-md md:flex sm:mt-11"
       variants={item}
-      initial="offscreen"
-      whileInView="onscreen"
+      initial="hidden"
+      animate="show"
       exit="exit"
       key="features"
       viewport={{ once: true }}
@@ -59,21 +72,42 @@ function Features() {
       </div>
 
       {/* right section */}
-      <div className="grid grid-cols-2 sm:w-5/12 md:mx-7 sm:gap-4">
-        <motion.div>
-          <FeaturesCards />
+      <motion.div
+        className="grid grid-cols-2 sm:w-5/12 md:mx-7 sm:gap-4"
+        key="featureContainer"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+      >
+        <motion.div key={"motion1"} variants={item}>
+          <FeaturesCards
+            description="Le proporcionamos una excelente tarifa basada en ubicacion"
+            icon={<CashIcon className="icon"></CashIcon>}
+          />
         </motion.div>
 
-        <motion.div>
-          <FeaturesCards title="Manejo de 5 S" icon="S" />
+        <motion.div key={"motion2"} variants={item}>
+          <FeaturesCards
+            title="Manejo de 5 S"
+            icon="S"
+            description="Manejo de metodologia 5 S en bodegas, oficinas como tambien a nivel de operaciones"
+          />
         </motion.div>
-        <motion.div>
-          <FeaturesCards />
+        <motion.div key={"motion3"} variants={item}>
+          <FeaturesCards
+            title="Personal Calificado"
+            description="Proveemos el personal adecuado y calificado para sus necesidades"
+            icon={<UserGroupIcon className="icon" />}
+          />
         </motion.div>
-        <motion.div>
-          <FeaturesCards />
+        <motion.div key={"motion4"} variants={item}>
+          <FeaturesCards
+            title="cambiar"
+            description="lorem"
+            icon={<UserGroupIcon className="icon" />}
+          />
         </motion.div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
