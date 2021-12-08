@@ -98,7 +98,8 @@ function ItemList({
           >
             ~{description1}<br />
             ~{description2}<br />
-            ~{description3}<br />
+            {description3 !== "" ? '~' : ''}
+            {description3}<br />
           </motion.p>
         )}
       </motion.div>

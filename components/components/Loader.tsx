@@ -75,18 +75,18 @@ function Loader({ loading, setLoading }: LoaderProps) {
           />
         </motion.div>
         <div className="flex justify-center items-center col-span-2 sm:col-span-3">
-          <div className="w-8/12 sm:w-5/12">
+          <div className="w-5/12 sm:w-5/12">
             <Image
-              src="/logo-10.png"
+              src="/logo-stickers.png"
               alt="me"
               layout="responsive"
-              width={300}
-              height={100}
+              width={250}
+              height={150}
             />
           </div>
         </div>
         <motion.div
-          className="w-9/12 col-span-1 mt-40 sm:w-3/12 sm:ml-44 sm:mt-0 sm:col-span-2"
+          className="w-9/12 col-span-1 mt-40 sm:w-2/12 sm:ml-44 sm:mt-0 sm:col-span-2 md:absolute md:bottom-0 md:left-0 md:ml-10"
           variants={item}
         >
           <Image
@@ -99,7 +99,7 @@ function Loader({ loading, setLoading }: LoaderProps) {
           />
         </motion.div>
         <motion.div
-          className="w-11/12 col-span-1 mt-8 sm:w-4/12 sm:ml-44 sm:mt-0 sm:col-span-1"
+          className="w-11/12 col-span-1 mt-8 sm:w-2/12 sm:ml-44 sm:mt-0 sm:col-span-1 md:absolute md:bottom-0 md:right-0 md:mr-10"
           variants={item}
         >
           <Image

@@ -2,8 +2,48 @@ import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/components/Navbar";
-import Banner from "../components/sections/Banner";
-const Contacto: NextPage = () =>  {
+import { useState } from "react";
+import { Candidate } from "../src/API";
+import { createCandidate } from "../src/graphql/mutations";
+import API, { graphqlOperation } from "@aws-amplify/api";
+const Contacto: NextPage = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    description: "",
+  });
+
+  function handleChange(e: any) {
+    setForm((prevState): any => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  }
+
+  async function handleSubmit(event: any) {
+    event.preventDefault();
+    console.log(form);
+    const { name, email, description } = form;
+    try {
+      await API.graphql(
+        graphqlOperation(createCandidate, {
+          input: {
+            name,
+            email,
+            description,
+          },
+        })
+      );
+      setForm({
+        name: "",
+        email: "",
+        description: "",
+      });
+    } catch (error) {
+      console.log("error", error);
+    }
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, backgroundColor: "#FE7A00" }}
@@ -30,7 +70,9 @@ const Contacto: NextPage = () =>  {
                 <input
                   type="text"
                   id="nombre"
-                  name="nombre"
+                  name="name"
+                  value={form?.name}
+                  onChange={handleChange}
                   className="peer h-10 w-full border-b-2 border-primary-400 focus:outline-none focus:border-orange-800 bg-white text-black placeholder-primary-400"
                   autoComplete="off"
                   placeholder="N"
@@ -47,6 +89,8 @@ const Contacto: NextPage = () =>  {
                   type="text"
                   id="email"
                   name="email"
+                  value={form?.email}
+                  onChange={handleChange}
                   className="peer h-10 w-full border-b-2 border-primary-400 focus:outline-none focus:border-orange-800 bg-white text-black placeholder-primary-400"
                   autoComplete="off"
                   placeholder="E"
@@ -61,7 +105,9 @@ const Contacto: NextPage = () =>  {
               <div className="relative pb-3 mt-1 h-20">
                 <textarea
                   id="descripcion"
-                  name="descripcion"
+                  name="description"
+                  value={form?.description}
+                  onChange={handleChange}
                   rows={4}
                   cols={80}
                   autoComplete="off"
@@ -79,7 +125,7 @@ const Contacto: NextPage = () =>  {
                 <button
                   type="submit"
                   className="py-3 bg-primary-400 px-6 rounded-full my-3 active:scale-105 transform duration-200 ease-out select-none outline-none  cursor-pointer text-white"
-                  onClick={(event) => event.preventDefault()}
+                  onClick={handleSubmit}
                 >
                   Enviar
                 </button>
@@ -129,12 +175,11 @@ const Contacto: NextPage = () =>  {
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </main>
     </motion.div>
   );
-}
+};
 
 export default Contacto;

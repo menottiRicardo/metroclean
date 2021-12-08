@@ -10,6 +10,15 @@
       "StackName": "amplify-metroclean-dev-184429",
       "StackId": "arn:aws:cloudformation:us-east-1:877593040745:stack/amplify-metroclean-dev-184429/54519d50-516e-11ec-9bc9-12db6b84912f",
       "AmplifyAppId": "d37cmmn68r1u60"
+    },
+    "categories": {
+      "function": {
+        "metrocleanEmailSender": {
+          "sesEmail": "gerencia@metrocleanpa.com",
+          "deploymentBucketName": "amplify-metroclean-dev-184429-deployment",
+          "s3Key": "amplify-builds/metrocleanEmailSender-5a6d6b654b3175776770-build.zip"
+        }
+      }
     }
   }
 }

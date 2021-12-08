@@ -35,13 +35,13 @@ function Hero() {
         <div className="w-full">
           {/* hero bold text */}
           <div className="sm:inline hidden">
-            <h1 className="font-bold text-4xl text-black">
+            <h1 className="font-bold text-5xl text-black">
               Manejo de personal
             </h1>
-            <h1 className="font-bold text-4xl text-black">
+            <h1 className="font-bold text-5xl text-black">
               para agilizar
             </h1>
-            <h1 className="font-bold text-4xl text-primary-400">
+            <h1 className="font-bold text-5xl text-primary-400">
               tu negocio
             </h1>
           </div>
@@ -56,9 +56,9 @@ function Hero() {
 
           {/* hero light text */}
           <div className="items-center flex pt-2 sm:mt-3">
-            <h1 className="font-light text-gray-700 text-lg justify-center items-center">
+            <h1 className="font-light text-gray-700 text-lg justify-center items-center md:text-xl">
               Una empresa panameña dedicada al manejo de personal con
-              5+ anos de experiencia
+              3+ anos de experiencia
             </h1>
           </div>
 

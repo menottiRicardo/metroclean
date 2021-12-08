@@ -1,9 +1,47 @@
 import Image from "next/image";
+import { useState } from "react";
+import { API, graphqlOperation } from "aws-amplify";
+import { createCandidate } from "../../src/graphql/mutations";
 interface ContactCard {
   title: string;
   icon?: any;
 }
 function Contactanos({ title, icon }: ContactCard) {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    description: "",
+  });
+  function handleChange(e: any) {
+    setForm((prevState): any => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  }
+
+  async function handleSubmit(event: any) {
+    event.preventDefault();
+    console.log(form);
+    const { name, email, description } = form;
+    try {
+      await API.graphql(
+        graphqlOperation(createCandidate, {
+          input: {
+            name,
+            email,
+            description,
+          },
+        })
+      );
+      setForm({
+        name: "",
+        email: "",
+        description: "",
+      });
+    } catch (error) {
+      console.log("error", error);
+    }
+  }
   return (
     <div className="shadow-md bg-primary-400 rounded-xl w-full flex-grow flex">
       <div className="p-4">
@@ -22,7 +60,9 @@ function Contactanos({ title, icon }: ContactCard) {
             <input
               type="text"
               id="nombre"
-              name="nombre"
+              name="name"
+              value={form?.name}
+              onChange={handleChange}
               className="peer h-10 w-full border-b-2 border-gray-300  focus:outline-none focus:border-white bg-primary-400 placeholder-transparent text-white"
               autoComplete="off"
               placeholder="N"
@@ -39,6 +79,8 @@ function Contactanos({ title, icon }: ContactCard) {
               type="text"
               id="email"
               name="email"
+              value={form?.email}
+              onChange={handleChange}
               className="peer h-10 w-full border-b-2 border-gray-300  focus:outline-none focus:border-white bg-primary-400 placeholder-transparent text-white"
               autoComplete="off"
               placeholder="E"
@@ -60,7 +102,9 @@ function Contactanos({ title, icon }: ContactCard) {
             /> */}
             <textarea
               id="descripcion"
-              name="descripcion"
+              name="description"
+              value={form?.description}
+              onChange={handleChange}
               rows={3}
               cols={80}
               autoComplete="off"

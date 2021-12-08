@@ -4,9 +4,11 @@ import { ThemeProvider } from "next-themes";
 import "../styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import awsExports from "../src/aws-exports";
-import {Amplify} from 'aws-amplify'
+import { Amplify } from "aws-amplify";
+
 Amplify.configure({ ...awsExports, ssr: true });
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <ThemeProvider attribute="class" defaultTheme="system">
       <AnimatePresence exitBeforeEnter>
