@@ -122,7 +122,7 @@ function Contactanos({ title, icon }: ContactCard) {
             <button
               type="submit"
               className="py-3 bg-white px-6 rounded-full my-3 active:scale-105 transform duration-200 ease-out select-none outline-none  cursor-pointer text-black"
-              onClick={(event) => event.preventDefault()}
+              onClick={handleSubmit}
             >
               Enviar
             </button>
