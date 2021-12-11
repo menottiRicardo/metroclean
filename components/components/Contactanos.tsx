@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { API, graphqlOperation } from "aws-amplify";
 import { createCandidate } from "../../src/graphql/mutations";
+import Alert from "./Alert";
 interface ContactCard {
   title: string;
   icon?: any;
@@ -12,6 +13,7 @@ function Contactanos({ title, icon }: ContactCard) {
     email: "",
     description: "",
   });
+  const [showAlert, setShowAlert] = useState(false)
   function handleChange(e: any) {
     setForm((prevState): any => ({
       ...prevState,
@@ -33,17 +35,20 @@ function Contactanos({ title, icon }: ContactCard) {
           },
         })
       );
+      setShowAlert(true)
       setForm({
         name: "",
         email: "",
         description: "",
       });
+      
     } catch (error) {
       console.log("error", error);
     }
   }
   return (
     <div className="shadow-md bg-primary-400 rounded-xl w-full flex-grow flex">
+      <Alert showAlert={showAlert} setShowAlert={setShowAlert}/>
       <div className="p-4">
         <div className="justify-center flex">
           <div className="flex justify-center bg-white rounded-full py-3 px-4 sm:transformw-20 w-16 h-16 items-center">

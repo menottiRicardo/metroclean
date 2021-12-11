@@ -6,12 +6,14 @@ import { useState } from "react";
 import { Candidate } from "../src/API";
 import { createCandidate } from "../src/graphql/mutations";
 import API, { graphqlOperation } from "@aws-amplify/api";
+import Alert from "../components/components/Alert";
 const Contacto: NextPage = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
     description: "",
   });
+  const [showAlert, setShowAlert] = useState(false)
 
   function handleChange(e: any) {
     setForm((prevState): any => ({
@@ -34,6 +36,7 @@ const Contacto: NextPage = () => {
           },
         })
       );
+      setShowAlert(true)
       setForm({
         name: "",
         email: "",
@@ -60,6 +63,7 @@ const Contacto: NextPage = () => {
       <main className="bg-primary-500 h-full">
         <Navbar />
         {/* <Banner /> */}
+        <Alert showAlert={showAlert} setShowAlert={setShowAlert}/>
         <div className="layout md:mt-16">
           <div className="bg-white mt-4 rounded-md p-3 shadow-lg">
             <h1 className="font-bold sm:text-2xl text-lg text-black uppercase flex justify-center">
