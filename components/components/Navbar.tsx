@@ -47,11 +47,11 @@ function Navbar() {
       <div className="w-full hidden sm:inline ml-5">
         <div className="relative w-40">
           <Image
-            src="/logo-10.png"
+            src="/logo-10.jpg"
             alt="me"
             layout="intrinsic"
-            width="350"
-            height="120"
+            width="300"
+            height="100"
           />
         </div>
       </div>
