@@ -2,7 +2,7 @@ import FeaturesCards from "../components/FeaturesCards";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { UserGroupIcon } from "@heroicons/react/solid";
-import { CashIcon } from "@heroicons/react/outline";
+import { CashIcon, ClipboardCheckIcon } from "@heroicons/react/outline";
 const container = {
   hidden: {
     y: -10,
@@ -102,9 +102,9 @@ function Features() {
         </motion.div>
         <motion.div key={"motion4"} variants={item}>
           <FeaturesCards
-            title="cambiar"
-            description="lorem"
-            icon={<UserGroupIcon className="icon" />}
+            title="Servicio Garantizado"
+            description="Sentir la misma responsabilidad que el equipo de mantenimiento de cada cliente"
+            icon={<ClipboardCheckIcon className="icon" />}
           />
         </motion.div>
       </motion.div>
