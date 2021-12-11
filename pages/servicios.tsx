@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Item } from "framer-motion/types/components/Reorder/Item";
+import { NextSeo } from "next-seo";
 
 import Navbar from "../components/components/Navbar";
 import ItemList from "../components/sections/servicesPage/ItemList";
@@ -79,6 +80,31 @@ function Servicios() {
       className="bg-primary-500"
     >
       <Navbar />
+      <NextSeo
+        title="Metro Clean Services"
+        description="Servicios de bodega como Descarga de Contenedores, Ayudantes generales, entre otros en Panama"
+        openGraph={{
+          url: "https://metrocleanpa.com",
+          title: "Metro Clean Services",
+          description:
+            "Empresa panameña dedicada al manejo de personal con 3+ anos de experiencia",
+          images: [
+            {
+              url: "https://metrocleansite.s3.amazonaws.com/thumbnail.webp",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+              type: "image/webp",
+            },
+          ],
+          site_name: 'Metro Clean'
+        }}
+        twitter={{
+          handle: '@handle',
+          site: '@site',
+          cardType: 'summary_large_image',
+        }}
+      />
       <main className="layout pb-20">
         <h1 className="text-4xl items-center justify-center flex mt-10 font-extrabold text-black">
           Servicios
