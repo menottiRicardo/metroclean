@@ -38,7 +38,7 @@ const item = {
 };
 function Features() {
   return (
-    <motion.div
+    <motion.section
       className="mt-6 bg-white shadow-md border p-3 mb-4 rounded-md md:flex sm:mt-11"
       variants={item}
       initial="hidden"
@@ -108,7 +108,7 @@ function Features() {
           />
         </motion.div>
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 }
 

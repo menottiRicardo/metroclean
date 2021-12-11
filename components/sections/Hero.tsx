@@ -28,7 +28,7 @@ const image = {
 };
 function Hero() {
   return (
-    <div className="pt-3 sm:mt-10">
+    <section className="pt-3 sm:mt-10">
       
       {/* left side */}
       <div className="sm:flex sm:justify-between sm:items-center">
@@ -101,7 +101,7 @@ function Hero() {
       <div className="justify-center flex mt-4 animate-bounce">
         <ArrowDownIcon className="h-5 w-5 justify-center text-black 2xl:hidden hidden sm:inline-flex" />
       </div>
-    </div>
+    </section>
   );
 }
 
