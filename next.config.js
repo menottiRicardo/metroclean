@@ -2,6 +2,9 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["metrocleansite.s3.amazonaws.com"],
+    domains: [
+      "metrocleansite.s3.amazonaws.com",
+      "djurqtwi328kw.cloudfront.net",
+    ],
   },
 };

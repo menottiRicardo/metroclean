@@ -89,7 +89,7 @@ function Hero() {
           <div className="flex justify-center">
             <div className="relative w-96 h-96 mt-4 ">
               <Image
-                src="/empkeados.webp"
+                src="https://djurqtwi328kw.cloudfront.net/empkeados.webp"
                 layout="fill"
                 objectFit="fill"
                 className="rounded-lg"

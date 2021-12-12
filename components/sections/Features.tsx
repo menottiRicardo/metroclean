@@ -60,7 +60,7 @@ function Features() {
             <div className="flex justify-center">
               <div className="relative w-80 h-80 mt-8 md:mt-12">
                 <Image
-                  src="https://metrocleansite.s3.amazonaws.com/kadir-ensenado.webp"
+                  src="https://djurqtwi328kw.cloudfront.net/kadir-ensenado.webp"
                   layout="fill"
                   objectFit="fill"
                   className="rounded-lg"

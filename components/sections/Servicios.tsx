@@ -38,26 +38,26 @@ function Servicios() {
           <ServiciosCard
             title="Descarga De contenedores"
             color="600"
-            url="https://metrocleansite.s3.amazonaws.com/descarga-contenedor.webp"
+            url="https://djurqtwi328kw.cloudfront.net/descarga-contenedor.webp"
             style="ml-16 sm:ml-14"
           />
 
           <ServiciosCard
             title="Personal de Limpieza"
             color="900"
-            url="https://metrocleansite.s3.amazonaws.com/limpieza-bodegas.webp"
+            url="https://djurqtwi328kw.cloudfront.net/limpieza-bodegas.webp"
             style="ml-20"
           />
           <ServiciosCard
             title="Pickiadores"
             color="600"
-            url="https://metrocleansite.s3.amazonaws.com/pickeadores.webp"
+            url="https://djurqtwi328kw.cloudfront.net/pickeadores.webp"
             style="ml-32 sm:ml-20"
           />
           <ServiciosCard
             title="Maquilas"
             color="900"
-            url="https://metrocleansite.s3.amazonaws.com/maquilas.webp"
+            url="https://djurqtwi328kw.cloudfront.net/maquilas.webp"
             style="ml-32 pl-5 sm:ml-16"
           />
         {/* </div> */}

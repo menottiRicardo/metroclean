@@ -44,7 +44,7 @@ function Contact() {
       </div>
       <div className="absolute rounded-xl w-full h-full top-0 left-0 opacity-40 overflow-hidden z-0">
         <Image
-          src="https://metrocleansite.s3.amazonaws.com/espalda.webp"
+          src="https://djurqtwi328kw.cloudfront.net/espalda.webp"
           layout="responsive"
           className="rounded-xl opacity-20"
           alt=""
