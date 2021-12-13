@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <motion.div exit={{ opacity: 0 }}>
       <NextSeo
         title="Metro Clean Services"
-        description="Empresa panameña dedicada al manejo de personal con 3+ anos de experiencia, descarga de contendores, ayudantes generales, maquilas, limpieza, panama"
+        description="Empresa panameña dedicada al manejo de personal con 3+ anos de experiencia y llevando servicios como descarga de contendores panama, ayudantes generales panama, maquilas, limpieza panama, metroclean panama"
         openGraph={{
           url: "https://metrocleanpa.com",
           title: "Metro Clean Services",
