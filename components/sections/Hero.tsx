@@ -58,7 +58,7 @@ function Hero() {
           <div className="items-center flex pt-2 sm:mt-3">
             <h1 className="font-light text-gray-700 text-lg justify-center items-center md:text-xl">
               Una empresa panameña dedicada al manejo de personal con
-              3+ anos de experiencia
+              3+ años de experiencia
             </h1>
           </div>
 
@@ -66,7 +66,7 @@ function Hero() {
           <div className="mt-4 sm:mt-16 justify-center flex">
             <Link href="/Contacto" passHref>
               <motion.div whileTap={{ rotate:20, opacity:0, y:-20, x:20}}  className="z-20">
-                <Button text="Contactanos" color="primary" />
+                <Button text="Contáctanos" color="primary" />
               </motion.div>
             </Link>
             <Link href="/servicios" passHref>

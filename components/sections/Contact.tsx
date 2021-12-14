@@ -38,7 +38,7 @@ function Contact() {
       </div>
       <div className="col-span-3 z-40">
         <Contactanos
-          title="Contactanos"
+          title="Contáctanos"
           icon={<PhoneOutgoingIcon className="h-5 w-5 text-black" />}
         />
       </div>

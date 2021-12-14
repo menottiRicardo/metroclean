@@ -22,12 +22,12 @@ const list = [
     description1:
       "Realizacion de tareas de pick de sku o mercancia en su ubicación",
     description2:
-      "Interpretacion de codigos, descripcion de productos",
-    description3: "Utilizacion de herramientas de pickin, PDT",
+      "Interpretación de codigos, descripcion de productos",
+    description3: "Utilización de herramientas de pickin, PDT",
     url:'https://djurqtwi328kw.cloudfront.net/pickeadores.webp'
   },
   {
-    title: "Distribucion de Mercancias",
+    title: "Distribución de Mercancias",
     description1:
       "Personal calificado para tareas de entregas a puntos de supermercados y rutas asignadas",
     description2:
@@ -38,7 +38,7 @@ const list = [
   {
     title: "Maquilas",
     description1:
-      "Segregacion de sku o productos asignados",
+      "Segregación de sku o productos asignados",
     description2:
       "Manejo de inventarios para la realizacion de maquilas",
     description3: "Manejo de informes entradas y salidas en el proceso de maquila ( Control de Inventario )",
@@ -81,13 +81,13 @@ function Servicios() {
     >
       <Navbar />
       <NextSeo
-        title="Metro Clean Services"
+        title="MetroClean Services"
         description="Servicios de bodega como Descarga de Contenedores, Ayudantes generales, entre otros en Panama"
         openGraph={{
           url: "https://metrocleanpa.com",
-          title: "Metro Clean Services",
+          title: "MetroClean Services",
           description:
-            "Empresa panameña dedicada al manejo de personal con 3+ anos de experiencia",
+            "Empresa panameña dedicada al manejo de personal con 3+ aóos de experiencia",
           images: [
             {
               url: "https://metrocleansite.s3.amazonaws.com/thumbnail.webp",

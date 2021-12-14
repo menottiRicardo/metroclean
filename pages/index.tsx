@@ -11,19 +11,20 @@ import Servicios from "../components/sections/Servicios";
 import { motion } from "framer-motion";
 // import styles from '../styles/Home.module.css'
 import { NextSeo } from "next-seo";
+import Footer from "../components/sections/Footer";
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(true);
   return (
     <motion.div exit={{ opacity: 0 }}>
       <NextSeo
-        title="Metro Clean Services"
-        description="Empresa panameña dedicada al manejo de personal con 3+ anos de experiencia y llevando servicios como descarga de contendores panama, ayudantes generales panama, maquilas, limpieza panama, metroclean panama"
+        title="MetroClean Services"
+        description="Empresa panameña dedicada al manejo de personal con 3+ años de experiencia y llevando servicios como descarga de contendores panama, ayudantes generales panama, maquilas, limpieza panama, metroclean panama"
         openGraph={{
           url: "https://metrocleanpa.com",
-          title: "Metro Clean Services",
+          title: "MetroClean Services",
           description:
-            "Empresa panameña dedicada al manejo de personal con 3+ anos de experiencia",
+            "Empresa panameña dedicada al manejo de personal con 3+ años de experiencia",
           images: [
             {
               url: "https://metrocleansite.s3.amazonaws.com/thumbnail.webp",
@@ -33,12 +34,12 @@ const Home: NextPage = () => {
               type: "image/webp",
             },
           ],
-          site_name: 'Metro Clean'
+          site_name: "Metro Clean",
         }}
         twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
         }}
       />
 
@@ -54,7 +55,7 @@ const Home: NextPage = () => {
           exit={{ opacity: 0 }}
         >
           <Navbar />
-          <div className="layout pb-10">
+          <div className="layout">
             <Hero />
             <Features />
             <Servicios />
@@ -62,6 +63,7 @@ const Home: NextPage = () => {
           </div>
         </motion.main>
       )}
+      {/* <Footer /> */}
     </motion.div>
   );
 };
